@@ -1,0 +1,128 @@
+## lookup for all commands, taht have been done
+
+    history
+
+## YES autom. bestätigen
+        -y 
+
+## super user
+        sudo su 
+------------------	
+aws ec2 describe-instances | jq -r '.Reservations[].Instances[]|.InstanceId+" "+.InstanceType+" "+(.Tags[] | select(.Key == "Name").Value)'
+sudo yum install jq  
+aws ec2 describe-instances --query 'Reservations[*].Instances[?not_null(PublicIpAddress)]'| jq -r '.[][]|.PublicIpAddress+" "+(.Tags[]|select(.Key=="Name").Value)'   
+yum install epel-release -y
+sudo yum install nodejs npm
+sudo npm install -g tldr
+aws ec2 describe-images --owners amazon --filters 'Name=name,Values=amzn2-ami-hvm-2.0.????????-x86_64-gp2' 'Name=state,Values=available' --output json | jq -r '.Images | sort_by(.CreationDate) | last(.[]).ImageId'
+--------------------------------------------------------------------
+#!repo clonen
+git clone https://github.com/NAME/REPO.git
+
+cd Gitlab-Docker-standalone
+nano -l scripts/bootstrap.sh
+    #!--> in Zeile 13 eigene Nameserver-IP eintragen und speichern
+make
+--------------------------------------------------------------------
+#!starten, anhalten, löschen, ausschalten
+cd ../ DAS VERZEICHNIS /
+vagrant up
+vagrant halt
+make clean
+
+sudo systemctl poweroff
+--------------------------------------------------------------------
+#!/bin/bash
+# GitLab-CE Container erstellen
+cd /vagrant
+docker-compose up -d
+--------------------------------------------------------------------
+#!firewall
+sudo ufw status verbose
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+
+sudo ufw enable 
+sudo ufw status verbose
+--------------------------------------------------------------------
+#!scrollen
+sudo apt search firefox | less 				
+sudo apt search firefox | grep jammy
+sudo apt search firefox | grep jammy | less
+    #!mit q beenden
+--------------------------------------------------------------------------
+#!install tree 
+sudo yum install tree 		
+sudo apt install tree
+
+#!gliederung inhalt
+tree 
+
+#!inhalt mit versteckten dateien
+ls -lah
+--------------------------------------------------------------------------
+#!directory löschen
+rmdir 				
+--------------------------------------------------------------------------
+#!file löschen
+rm -rf gitingor 		
+
+#file umbenennen
+mv gitingore .gitignore 			
+--------------------------------------------------------------------------
+#!erstellen ordner, datei 
+mkdir projekt1
+touch index.html style.css backend.py 
+
+#!datei bearbeiten, ausgeben
+nano index.html
+cat index.html
+
+#!datei verschieben
+cat index.html >> style.css
+    #!STRG O ENTER, STRG X
+--------------------------------------------------------------------
+#!update & upgrade all files
+sudo apt update && sudo apt upgrade -y			
+--------------------------------------------------------------------
+#!windows
+sudo apt install httpd 
+sudo systemctl enable httpd
+sudo systemctl status httpd
+sudo systemctl start httpd
+
+#!linux
+sudo apt install nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+sudo systemctl start nginx
+--------------------------------------------------------------------
+#!alle sessionfenster
+strg + b 	s 
+			
+#!letzte session
+strg + b   	ssh 
+
+#!bash umbenennen
+strg b ,  
+--------------------------------------------------------------------			
+#!zeigt CPU an
+htop 	
+--------------------------------------------------------------------
+#!konfiguration				
+nano .bashrc 			
+	#!-->neofetch an letzter Stelle schreiben
+
+source .bashrc
+
+
+# Github remote
+
+    ssh -T git@github.com
+    git remote add origin git@github.com:PROFILNAME/REPOSITORY.git
+
+
+# change branch (if necessary)
+
+    git checkout master
