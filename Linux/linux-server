@@ -5,7 +5,7 @@ SKRIPT FUER VM: Ubuntu_2 /vw-server
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 google --update
 
-sudo apt install tldrsudo killall -u username
+sudo apt install tldr
 tldr --update
 
 sudo apt install terminator
