@@ -1,4 +1,4 @@
-## Skript: Host unter Ubuntu 22.04 LTS
+## Host unter Ubuntu 22.04 LTS | Skript 1 von 2
 
 ## Installation
 	sudo apt install pacman
@@ -103,4 +103,11 @@
 	sudo reboot 	
 
 ## Gruppenarbeit
-## Dieser virtuelle Ubuntu Host-PC wird nun über die bereits ermittelte IP Adresse (ip a) an den Platznachbarn übergeben, die VM bleibt dabei lokal installiert. Ziel ist es eine RL Situation zu simulieren bei der Server und Host von unterschiedlichen Personen administriert werden sollen.
+## In dieser Übung soll jeweils ein Host und ein Server unter Verwendung von Ubuntu 22.04 LTS erstellt werden.
+## Ziel dieser Übung ist es eine RL Situation zu simulieren, bei der Server und Host von unterschiedlichen Admins an unterschiedlichen Orten administriert werden sollen.
+
+# Aufgabe 1: Fügen Sie nach erfolgreicher Konfiguration des Host-PC einen weiteren Sudo Admin hinzu.
+# Aufgabe 2: Tauschen Sie mit Ihren Gruppenpartner die IP Adresse Ihres erstellten Host-PC aus.
+# Aufgabe 3: Verbinden Sie sich auf Ihren erstellten Server-PC über SSH mit den den Host-PC Ihres Gruppenpartners.
+# Aufgabe 4: Übernehmen Sie die Kontrolle über den fremden Host, indem Sie dem Ersteller die Admin Rechte entziehen und den Nutzer sowie alle vorhandenen Daten entfernen.
+
