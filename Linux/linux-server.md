@@ -41,11 +41,11 @@
 
 ## Protokolle aktiveren für ssh, http und https
 	sudo ufw allow ssh
-	vk@v-server> Rules updated
+	vk@vk-server> Rules updated
 	vk@vk-server> Rules updated (v6)
 
 	sudo ufw allow http
-	vk@v-server> Rules updated
+	vk@vk-server> Rules updated
 	vk@vk-server> Rules updated (v6)
 
 	sudo ufw allow https
