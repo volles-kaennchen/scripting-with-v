@@ -83,3 +83,16 @@ sudo apt upgrade
 sudo killall -u username				
 sudo deluser --remove-all-files asapo
 (Erst VM Logout danach den Befehl ausfuehren)
+
+cat /etc/ssh 			TAB druecken
+ls /lah .ssh
+ssh-keygen
+ssh-copy-id admin@10.50.101.51
+
+sudo nano /etc/ssh/sshd_config
+>   remove raute from Port 2222
+
+ssh admin@10.50.101.51
+sudo cp /etc/ssh/sshd_config sshd_config_backup
+
+
