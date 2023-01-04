@@ -1,0 +1,85 @@
+*****************************************
+SKRIPT FUER VM: Ubuntu_2 /vwitzel-server
+*****************************************
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+google --update
+
+sudo apt install tldrsudo killall -u username
+tldr --update
+
+sudo apt install terminator
+sudo apt install neofetch
+neofetch
+
+sudo dpkg-reconfigure keyboard-configuration
+
+sudo reboot
+--------------------------------------
+FIREWALL UND SSH
+
+	sudo systemctl status sshd
+	> Status: not installed 
+	
+	sudo apt install openssh-server
+	
+	sudo apt install ufw
+
+	which ufw   
+	> /usr/sbin/ufw
+
+	sudo systemctl status ufw
+
+	sudo ufw status numbered
+	> Status: inactive
+
+	sudo ufw allow ssh
+	sudo ufw allow http
+	sudo ufw allow https
+	> Rules updated
+	> Rules updated (v6)
+
+	sudo ufw enable 
+	> Firewall is active and enabled on system startup
+
+	sudo ufw status numbered
+	> Status: active
+	> List with active Ports
+
+	sudo ufw status verbose
+	> Status: active
+	> Logging: on (low)
+	> Default: deny (incoming), allow (outgoing), disabled (routed)
+	> New profiles: skip
+	> List with active Ports
+
+--------------------------------------
+*** IP TABLE ***
+
+ip a
+ssh vwitzel@10.50.101.53 EIGENE IP
+
+--------------------------------------
+*** HOSTNAMEN AENDERN ***
+
+ssh vwitzel@10.50.101.41 
+hostnamectl set-hostname vwitzel-server
+
+--------------------------------------
+*** BENUTYER ERSTELLEN 2/2 ***
+
+terminator
+ssh vwitzel@10.50.101.41 
+sudo chage --lastday 0 admin
+sudo passwd admin
+
+--------------------------------------
+ssh admin@10.50.101.51
+
+sudo apt update 
+sudo apt upgrade
+
+		
+sudo killall -u username				
+sudo deluser --remove-all-files asapo
+(Erst VM Logout danach den Befehl ausfuehren)
