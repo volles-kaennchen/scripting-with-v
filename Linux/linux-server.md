@@ -113,8 +113,9 @@
 	In dieser Übung soll jeweils ein Host und ein Server unter Verwendung von Ubuntu 22.04 LTS erstellt werden.
 	Das Ziel dieser Übung ist es eine RL Situation zu simulieren, bei der Server und Host von unterschiedlichen Admins an unterschiedlichen Orten administriert werden sollen.
 
-	Aufgabe 3: Verbinden Sie sich auf Ihren erstellten Server-PC über SSH mit den den Host-PC Ihres Gruppenpartners.
+	Aufgabe 3: Verbinden Sie sich nach erfolgreicher Konfiguration auf Ihren Server-PC über SSH mit den den Host-PC Ihres Gruppenpartners.
 	Aufgabe 4: Übernehmen Sie die Kontrolle über den fremden Host, indem Sie dem Ersteller die Admin Rechte entziehen und den Nutzer sowie alle vorhandenen Daten entfernen.
+	Aufgabe 5: Erstellen Sie abschließend ein Backup 
 
 
 
