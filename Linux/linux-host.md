@@ -1,4 +1,4 @@
-# SKRIPT FUER VM: Ubuntu /vk-host
+## Skript: Host unter Ubuntu 22.04 LTS
 
 ## Installation
 	sudo apt install pacman
@@ -24,7 +24,7 @@
 	sudo systemctl status sshd
 	vk@vk-host> Status: not installed
 
-# SSH installieren
+## SSH installieren
 	sudo apt install openssh-server
 
 ## Firewall installieren, wenn nicht vorhanden
