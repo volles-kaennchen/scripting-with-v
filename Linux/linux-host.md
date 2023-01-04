@@ -99,7 +99,7 @@
 	sudo apt update
 	sudo apt upgrade
 
-## System neu starten (Systemänderungen werden zT danach erst wirksam)
+## Neustart (Änderungen ausführen) 
 	sudo reboot 	
 
 ## Gruppenarbeit
