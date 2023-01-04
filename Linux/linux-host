@@ -86,3 +86,6 @@ VM Tausch mit den Nachbarn
 ---------------------------------------------------
 *** EINE DATEI AN EINE ANDERE VM UEBERTRAGEN ***
 scp /home/vw/Downloads/Document vw 10.50.101.53:/home/vw/
+
+sudo ufw allow 2222/tcp
+sudo allow 2222
