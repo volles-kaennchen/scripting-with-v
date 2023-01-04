@@ -1,5 +1,5 @@
 *************************************
-SKRIPT FUER VM: Ubuntu /vw-host
+SKRIPT FUER VM: Ubuntu /vk-host
 *************************************
 
 
@@ -61,13 +61,13 @@ sudo systemctl status verbose
 *** IP TABLE ABRUFEN ***
 
 ip a
-ssh vw@10.50.101.41 EIGENE IP
+ssh vk@10.50.101.XX EIGENE IP
 ---------------------------------------------------
 *** HOSTNAMEN AENDERN ***
 
 neofetch
-ssh vw@10.50.101.53 
-hostnamectl set-hostname vw-host
+ssh vk@10.50.101.XX 
+hostnamectl set-hostname vk-host
 ---------------------------------------------------
 *** BENUTYER ERSTELLEN 1/2 ***
 
@@ -81,11 +81,11 @@ sudo apt update
 
 
 
-VM Tausch mit den Nachbarn
--- Ubuntu /vw-host danach nicht mehr verfuegbar!!!
+VM Tausch mit den Platznachbarn - RL Simulation -
+-- Ubuntu /vk-host danach nicht mehr verfuegbar!!!
 ---------------------------------------------------
 *** EINE DATEI AN EINE ANDERE VM UEBERTRAGEN ***
-scp /home/vw/Downloads/Document vw 10.50.101.53:/home/vw/
+scp /home/vk/Downloads/Document vk 10.50.101.XX:/home/vk/
 
 sudo ufw allow 2222/tcp
 sudo allow 2222
