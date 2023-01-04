@@ -1,0 +1,88 @@
+*************************************
+SKRIPT FUER VM: Ubuntu /vw-host
+*************************************
+
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+google --update
+
+sudo apt install tldr
+tldr --update
+
+sudo apt install terminator
+sudo apt install neofetch
+neofetch
+
+sudo dpkg-reconfiguration keyboard-configuration
+
+sudo reboot 
+---------------------------------------------------
+*** FIREWALL UND SSH ***
+
+sudo systemctl status sshd
+> Status: not installed
+
+sudo apt install openssh-server
+
+sudo apt install ufw
+
+which ufw
+> /usr/sbin/ufw
+
+sudo systemctl status ufw
+
+sudo ufw status numbered
+> Status: inactive
+
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+> Rules updated
+> Rules updated (v6)
+> Rules updated
+> Rules updated (v6)
+
+sudo ufw enable 
+> Firewall is active and enabled on system startup
+---------------------------------------------------
+*** PORTS ABRUFEN ***
+
+sudo ufw status numbered
+> Status: active 
+> List with active Ports
+
+sudo systemctl status verbose
+> Status: active
+> Loggin: on (low)
+> Default: deny (incoming), allow (outgoing), disabled (routed)
+> New Profiles: skip
+> List with active Ports
+---------------------------------------------------
+*** IP TABLE ABRUFEN ***
+
+ip a
+ssh vw@10.50.101.41 EIGENE IP
+---------------------------------------------------
+*** HOSTNAMEN AENDERN ***
+
+neofetch
+ssh vw@10.50.101.53 
+hostnamectl set-hostname vw-host
+---------------------------------------------------
+*** BENUTYER ERSTELLEN 1/2 ***
+
+adduser admin
+sudo !!
+
+sudo usermod -aG sudo admin
+
+su - admin
+sudo apt update 
+
+
+
+VM Tausch mit den Nachbarn
+-- Ubuntu /vw-host danach nicht mehr verfuegbar!!!
+---------------------------------------------------
+*** EINE DATEI AN EINE ANDERE VM UEBERTRAGEN ***
+scp /home/vw/Downloads/Document vw 10.50.101.53:/home/vw/
