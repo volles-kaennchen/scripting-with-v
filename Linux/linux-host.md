@@ -102,11 +102,11 @@
 ## Neustart (Änderungen ausführen) 
 	sudo reboot 	
 
-## Gruppenarbeit
+## Gruppenarbeit | 1 von 2
 	In dieser Übung soll jeweils ein Host und ein Server unter Verwendung von Ubuntu 22.04 LTS erstellt werden.
 	Das Ziel dieser Übung ist es eine RL Situation zu simulieren, bei der Server und Host von unterschiedlichen Admins an unterschiedlichen Orten administriert werden sollen.
 
-	Aufgabe 1: Fügen Sie nach erfolgreicher Konfiguration des Host-PC einen weiteren Sudo Admin hinzu.
+	Aufgabe 1: Fügen Sie nach erfolgreicher Konfiguration beider virtueller Maschienen auf dem Host-PC einen weiteren Sudo Admin hinzu.
 	Aufgabe 2: Tauschen Sie mit Ihren Gruppenpartner die IP Adresse Ihres erstellten Host-PC aus.
 	Aufgabe 3: Verbinden Sie sich auf Ihren erstellten Server-PC über SSH mit den den Host-PC Ihres Gruppenpartners.
 	Aufgabe 4: Übernehmen Sie die Kontrolle über den fremden Host, indem Sie dem Ersteller die Admin Rechte entziehen und den Nutzer sowie alle vorhandenen Daten entfernen.
