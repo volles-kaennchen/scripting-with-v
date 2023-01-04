@@ -1,5 +1,5 @@
 *****************************************
-SKRIPT FUER VM: Ubuntu_2 /vw-server
+SKRIPT FUER VM: Ubuntu_2 /vk-server
 *****************************************
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -57,24 +57,24 @@ FIREWALL UND SSH
 *** IP TABLE ***
 
 ip a
-ssh vw@10.50.101.53 EIGENE IP
+ssh vk@10.50.101.XX EIGENE IP
 
 --------------------------------------
 *** HOSTNAMEN AENDERN ***
 
-ssh vw@10.50.101.41 
-hostnamectl set-hostname vw-server
+ssh vk@10.50.101.XX
+hostnamectl set-hostname vk-server
 
 --------------------------------------
-*** BENUTYER ERSTELLEN 2/2 ***
+*** BENUTZER ERSTELLEN 2/2 ***
 
 terminator
-ssh vw@10.50.101.41 
+ssh vk@10.50.101.XX 
 sudo chage --lastday 0 admin
 sudo passwd admin
 
 --------------------------------------
-ssh admin@10.50.101.51
+ssh admin@10.50.101.XX
 
 sudo apt update 
 sudo apt upgrade
@@ -87,12 +87,12 @@ sudo deluser --remove-all-files asapo
 cat /etc/ssh 			TAB druecken
 ls /lah .ssh
 ssh-keygen
-ssh-copy-id admin@10.50.101.51
+ssh-copy-id admin@10.50.101.XX
 
 sudo nano /etc/ssh/sshd_config
 >   remove raute from Port 2222
 
-ssh admin@10.50.101.51
+ssh admin@10.50.101.XX
 sudo cp /etc/ssh/sshd_config sshd_config_backup
 
 
