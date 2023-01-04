@@ -1,5 +1,5 @@
 *****************************************
-SKRIPT FUER VM: Ubuntu_2 /vwitzel-server
+SKRIPT FUER VM: Ubuntu_2 /vw-server
 *****************************************
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -57,19 +57,19 @@ FIREWALL UND SSH
 *** IP TABLE ***
 
 ip a
-ssh vwitzel@10.50.101.53 EIGENE IP
+ssh vw@10.50.101.53 EIGENE IP
 
 --------------------------------------
 *** HOSTNAMEN AENDERN ***
 
-ssh vwitzel@10.50.101.41 
-hostnamectl set-hostname vwitzel-server
+ssh vw@10.50.101.41 
+hostnamectl set-hostname vw-server
 
 --------------------------------------
 *** BENUTYER ERSTELLEN 2/2 ***
 
 terminator
-ssh vwitzel@10.50.101.41 
+ssh vw@10.50.101.41 
 sudo chage --lastday 0 admin
 sudo passwd admin
 
