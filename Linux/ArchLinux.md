@@ -16,7 +16,7 @@
 
     reflector -c Germany -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 
-   head /etc/pacman.d/mirrorlist  ("head" zeigt die ersten 10 Zeilen an) 
+    head /etc/pacman.d/mirrorlist  ("head" zeigt die ersten 10 Zeilen an) 
 
     fdisk /dev/sda 
     ODER
