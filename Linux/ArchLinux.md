@@ -20,13 +20,13 @@
         ODER
    cfdisk /dev/sda
   
- > choose "gpt" and confirm with enter
- > sda1  300MB   Type: EFI
- > sda2  2.0GB   Type: Linux Swap
- > sda3  30GB    Type: Linux Filesystem
- > sda4  9.0GB   Type: Linux Filesystem
- > choose "write", confirm by enter: yes
- > quit
+ choose "gpt" and confirm with enter
+ sda1  300MB   Type: EFI
+ sda2  2.0GB   Type: Linux Swap
+ sda3  30GB    Type: Linux Filesystem
+ sda4  9.0GB   Type: Linux Filesystem
+ choose "write", confirm by enter: yes
+ quit
 
 # Partitionen überprüfen
 
@@ -137,17 +137,11 @@
 # Dienste starten
 
    systemctl enable NetworkManager
-
    systemctl enable sshd
-
    systemctl enable avahi.daemon
-
    systemctl enable reflector.timer
-
    systemctl enable ufw 
-
    systemctl enable lxdm
-
    systemctl enable vboxservice
   
 # System verlassen und neu starten
