@@ -1,13 +1,21 @@
-  loadkeys de-latin1
+ # Prepare VM
+ ISO Arch Linux 
+ 4096MB | 2 CPU | 40GB Speicher | Grafikspeicher FULL 
+ Netzwerkbrücke + allow VM und Host
+  
+# Tastatur auf deutsch umstellen 
+ loadkeys de-latin1
   
 # Alle Festplatten auflisten
   lsblk
   
   reflector -c Germany -a 6 --sort rate --save /etc/pacman.d/mirrorlist
   
-  head /etc/pacman.d/mirrorlist
+  head /etc/pacman.d/mirrorlist  ("head" zeigt die ersten 10 Zeilen an) 
   
-  fdisk /dev/sda  ODER  cfdisk /dev/sda
+  fdisk /dev/sda 
+        ODER
+  cfdisk /dev/sda
   
 > choose "gpt" and confirm with enter
 > sda1  300MB   Type: EFI
@@ -31,8 +39,8 @@
    mkdir -p /mnt/{boot/efi,home}
    mount /dev/sda1 /mnt/boot/efi
    mount /dev/sda4 /mnt/home
-   
-# Partitionen erneut überprüfen
+
+# Partitionen erneut überprüfen (Mountpoints sollten nun hinterlegt sein)
   lsblk 
 
 # Installation (grundlegende Dinge)
@@ -41,7 +49,7 @@
 # Config- Files
    nano /etc/pacman.conf
    
-> look for "SigLevel = Object...", remove text after = and replace with the word: None
+> look for "SigLevel = Object...", remove text after = and replace with the word: Never
 > save settings with strg + o + ENTER + X
 
 # Filesys-table generieren
@@ -87,7 +95,7 @@
   
   nano /etc/pacman.conf
   
-> look for "SigLevel = Object...", remove text after = and replace with the word: None
+> look for "SigLevel = Object...", remove text after = and replace with the word: Never
 > save settings with strg + o + ENTER + X
   
 # Complete Set-Up
@@ -121,6 +129,11 @@
   systemctl enable lxdm
   
   systemctl enable vboxservice
+  
+# System verlassen und neu starten
+  umount -a
+  exit
+  reboot oder poweroff
 
 # if "sh: can't access tty; job control turned off"
-> boot > loadkeys de-latin1 > repeat mount 3x > arch-chroot /mnt > pacman -S linux
+> boot > loadkeys de-latin1 > repeat mount 3x > nano /boot/initramfs-linux.img UND /boot/initramfs-linux-fallback.img > nanoarch-chroot /mnt > pacman -S linux
