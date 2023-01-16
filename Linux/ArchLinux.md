@@ -9,13 +9,13 @@
   
   fdisk /dev/sda  ODER  cfdisk /dev/sda
   
-  > choose "gpt" and confirm with enter
-  > sda1  300MB   Type: EFI
-  > sda2  2.0GB   Type: Linux Swap
-  > sda3  30GB    Type: Linux Filesystem
-  > sda4  9.0GB   Type: Linux Filesystem
-  > choose "write", confirm by enter: yes
-  > quit
+> choose "gpt" and confirm with enter
+> sda1  300MB   Type: EFI
+> sda2  2.0GB   Type: Linux Swap
+> sda3  30GB    Type: Linux Filesystem
+> sda4  9.0GB   Type: Linux Filesystem
+> choose "write", confirm by enter: yes
+> quit
 
 # Partitionen überprüfen
   lsblk 
@@ -41,15 +41,16 @@
 # Config- Files
    nano /etc/pacman.conf
    
-   > look for "SigLevel = Object...", remove text after = and replace with the word: None
-   > save settings with strg + o + ENTER + X
+> look for "SigLevel = Object...", remove text after = and replace with the word: None
+> save settings with strg + o + ENTER + X
 
 # Filesys-table generieren
    genfstab -U /mnt >> /mnt/etc/fstab
 
 
 # Absprung vom Root Livemedium in das installierte Root System
-arch-chroot /mnt 
+  arch-chroot /mnt 
+
 > Login should be: [root@archiso /]
 
 # Zeitzone festlegen
@@ -64,30 +65,30 @@ arch-chroot /mnt
 # Config- Files
   nano /etc/locale.gen
   
-  > look for "de_DE.UTF-8 UTF-8", remove #
-  > save settings with strg + o + ENTER + X
+> look for "de_DE.UTF-8 UTF-8", remove #
+> save settings with strg + o + ENTER + X
 
   nano etc/locale.com
   
-  > Add: LANG=de_DE.UTF-8
-  > save settings with strg + o + ENTER + X
+> Add: LANG=de_DE.UTF-8
+> save settings with strg + o + ENTER + X
   
   nano etc/hostname
   
-  > Add root name
-  > save settings with strg + o + ENTER + X
+> Add root name
+> save settings with strg + o + ENTER + X
   
   nano etc/hosts
   
-  > Add: 
-  > 127.0.0.1     TAB drücken     localhost
-  > ::1           TAB drücken     localhost
-  > 127.0.1.1     TAB drücken     rootname-einfügen.local domain  TAB drücken rootname-einfügen
+> Add: 
+> 127.0.0.1     TAB drücken     localhost
+> ::1           TAB drücken     localhost
+> 127.0.1.1     TAB drücken     rootname-einfügen.local domain  TAB drücken rootname-einfügen
   
   nano /etc/pacman.conf
   
-  > look for "SigLevel = Object...", remove text after = and replace with the word: None
-  > save settings with strg + o + ENTER + X
+> look for "SigLevel = Object...", remove text after = and replace with the word: None
+> save settings with strg + o + ENTER + X
   
 # Complete Set-Up
   pacman -S sudo networkmanager network-manager-applet wpa_supplicant dialog mtools dosfstools linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils alsa-utils pipewire pipewire-alsa pipewire-jack openssh rsync bridge-utils dnsmasq ufw
@@ -95,8 +96,8 @@ arch-chroot /mnt
 # Benutzer und Gruppen
    nano /etc/sudoers
    
-  > look for "%wheel ALL=(ALL:ALL) ALL", remove #
-  > save settings with strg + o + ENTER + X
+> look for "%wheel ALL=(ALL:ALL) ALL", remove #
+> save settings with strg + o + ENTER + X
 
 # Passwörter aktualisieren
   passwd
