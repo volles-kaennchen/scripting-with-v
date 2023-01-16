@@ -90,7 +90,7 @@ arch-chroot /mnt
   > save settings with strg + o + ENTER + X
   
 # Complete Set-Up
-  pacman -S sudo networkmanager network-manager-applet wpa-supplicant dialog mtools dosfstools linux-headers avagvfs gvfs-smb nfs-utils inetutils alsa-utils pipewire pipewire-alsa pipewire-jack openssh rsbridge-utils dnsmasq ufw
+  pacman -S sudo networkmanager network-manager-applet wpa-supplicant dialog mtools dosfstools linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils alsa-utils pipewire pipewire-alsa pipewire-jack openssh rsync bridge-utils dnsmasq ufw
 
 # Benutzer und Gruppen
    nano /etc/sudoers
