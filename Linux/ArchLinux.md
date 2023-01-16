@@ -11,11 +11,11 @@
   > choose "gpt" and confirm with enter
   > sda1  300MB   Type: EFI
   > sda2  2.0GB   Type: Linux Swap
-  > sda3  30GB    Type: Linux Filesystemarch ch
+  > sda3  30GB    Type: Linux Filesystem
   > sda4  9.0GB   Type: Linux Filesystem
   > choose "write", confirm by enter: yes
   > quit
-  
+  mkfs.fat -<
 # Partitionen überprüfen
   lsblk 
 
@@ -26,8 +26,8 @@
   mkfs.ext4 /dev/sda4
   
 # Verzeichnisse erstellen, platzieren, verschieben
-   mount /dev/sda3 /dev/mnt
-   mkdir -p /mnt/{boot/efi,home}re
+   mount /dev/sda3 /mnt
+   mkdir -p /mnt/{boot/efi,home}
    mount /dev/sda1 /mnt/boot/efi
    mount /dev/sda4 /mnt/home
    
@@ -44,7 +44,6 @@
 
 # Filesys-table generieren
    genfstab -U /mnt >> mnt/etc/fstab
-
 
 
 # Absprung vom Root Livemedium in das installierte Root System
