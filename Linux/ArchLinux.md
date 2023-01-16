@@ -109,11 +109,17 @@
 
 # Dienste starten
   systemctl enable NetworkManager
+  
   systemctl enable sshd
+  
   systemctl enable avahi.daemon
+  
   systemctl enable reflector.timer
+  
   systemctl enable ufw 
+  
   systemctl enable lxdm
+  
   systemctl enable vboxservice
 
 # if "sh: can't access tty; job control turned off"
