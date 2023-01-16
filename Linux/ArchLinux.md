@@ -53,7 +53,7 @@ arch-chroot /mnt
 > Login should be: [root@archiso /]
 
 # Zeitzone festlegen
-  ln -sf /usr/share/zoneinfo/Europe/Berlin/etc/localtime
+  ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
   
 # Zeit aktualisieren
   hwclock --systohc
