@@ -36,7 +36,7 @@
   lsblk 
 
 # Installation (grundlegende Dinge)
-  pacstrap /mnt base-devel linux linux-firmware nano git intel-ucode grub efibootmgr virtualbox-guest-utils lxde
+  pacstrap /mnt base base-devel linux linux-firmware nano git intel-ucode grub efibootmgr virtualbox-guest-utils lxde
 
 # Config- Files
    nano /etc/pacman.conf
@@ -45,7 +45,7 @@
    > save settings with strg + o + ENTER + X
 
 # Filesys-table generieren
-   genfstab -U /mnt >> mnt/etc/fstab
+   genfstab -U /mnt >> /mnt/etc/fstab
 
 
 # Absprung vom Root Livemedium in das installierte Root System
