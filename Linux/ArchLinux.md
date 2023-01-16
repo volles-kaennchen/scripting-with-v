@@ -7,7 +7,7 @@
 
 ## Tastatur auf deutsch umstellen 
 
-   loadkeys de-latin1
+    loadkeys de-latin1
 
 
 ## Alle Festplatten auflisten
