@@ -111,6 +111,10 @@
 
     > Add: LANG=de_DE.UTF-8
     > save settings with strg + o + ENTER + X
+    
+    nano /etc/vconsole.conf
+    > Add: KEYMAP=de-latin1
+    > save settings with strg + o + ENTER + X
 
     nano etc/hostname
 
@@ -128,8 +132,7 @@
 
     > look for "SigLevel = Object...", remove text after = and replace with the word: Never
     > save settings with strg + o + ENTER + X
-
-
+    
 ## Complete Set-Up
 
     pacman -S sudo networkmanager network-manager-applet wpa_supplicant dialog mtools dosfstools linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils alsa-utils pipewire pipewire-alsa pipewire-jack openssh rsync bridge-utils dnsmasq ufw
