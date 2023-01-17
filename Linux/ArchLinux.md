@@ -112,9 +112,13 @@
     > Add: LANG=de_DE.UTF-8
     > save settings with strg + o + ENTER + X
     
+    export LANG=de_DE-UTF-8 
+    
+    
     nano /etc/vconsole.conf
     > Add: KEYMAP=de-latin1
     > save settings with strg + o + ENTER + X
+
 
     nano etc/hostname
 
