@@ -144,6 +144,7 @@
     pacman -S sudo networkmanager network-manager-applet wpa_supplicant dialog mtools dosfstools linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-jack pipewire-pulse openssh rsync reflector bridge-utils dnsmasq vde2 openbsd-netcat ipset ufw flatpak sof-firmware nss-mdns os-prober ntfs-3g firefox
     
 ## Benutzer und Gruppen
+    useradd -mG wheel name-eingeben
 
     nano /etc/sudoers
 
