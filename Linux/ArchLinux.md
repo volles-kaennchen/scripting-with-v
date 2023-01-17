@@ -126,7 +126,7 @@
     > Add: 
     > 127.0.0.1     TAB drücken     localhost
     > ::1           TAB drücken     localhost
-    > 127.0.1.1     TAB drücken     rootname-einfügen.local domain  TAB drücken rootname-einfügen
+    > 127.0.1.1     TAB drücken     rootname-einfügen.localdomain  TAB drücken rootname-einfügen
 
     nano /etc/pacman.conf
 
