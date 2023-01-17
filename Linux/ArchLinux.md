@@ -104,6 +104,9 @@
     > look for "de_DE.UTF-8 UTF-8", remove #
     > save settings with strg + o + ENTER + X
 
+    locale-gen 
+    
+    
     nano etc/locale.com
 
     > Add: LANG=de_DE.UTF-8
