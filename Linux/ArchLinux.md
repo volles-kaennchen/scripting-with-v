@@ -179,8 +179,9 @@
     
 ## System verlassen und neu starten
 
-    umount -a
     exit
+    
+    umount -a
     reboot oder poweroff
 
 
