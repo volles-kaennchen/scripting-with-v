@@ -141,7 +141,8 @@
 
     pacman -S sudo networkmanager network-manager-applet wpa_supplicant dialog mtools dosfstools linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils alsa-utils pipewire pipewire-alsa pipewire-jack openssh rsync bridge-utils dnsmasq ufw
 
-
+    pacman -S sudo networkmanager network-manager-applet wpa_supplicant dialog mtools dosfstools linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils cups hplip alsa-utils pipewire pipewire-alsa pipewire-jack pipewire-pulse openssh rsync reflector bridge-utils dnsmasq vde2 openbsd-netcat ipset ufw flatpak sof-firmware nss-mdns os-prober ntfs-3g firefox
+    
 ## Benutzer und Gruppen
 
     nano /etc/sudoers
