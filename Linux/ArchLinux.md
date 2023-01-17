@@ -174,7 +174,9 @@
     systemctl enable lxdm
     systemctl enable vboxservice
 
-
+    systemctl enable NetworkManager cups.service sshd avahi-daemon reflector.timer vboxservice
+    
+    
 ## System verlassen und neu starten
 
     umount -a
