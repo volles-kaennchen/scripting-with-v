@@ -184,7 +184,12 @@
     umount -a
     reboot oder poweroff
 
+## 
 
+        sudo pacman -S --needed xfce4 mousepad parole ristretto thunar-archive-plugin thunar-media-tags-plugin xfce4-battery-plugin xfce4-datetime-plugin xfce4-mount-plugin xfce4-netload-plugin xfce4-notifyd xfce4-pulseaudio-plugin xfce4-screensaver xfce4-taskmanager xfce4-wavelan-plugin xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin file-roller network-manager-applet leafpad epdfview galculator lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings capitaine-cursors arc-gtk-theme xdg-user-dirs-gtk
+        
+        sudo pacman -S --needed virtualbox-guest-utils xf86-video-vmware
+        
 ## if "sh: can't access tty; job control turned off"
 
    > boot > loadkeys de-latin1 > repeat mount 3x > nano /boot/initramfs-linux.img UND /boot/initramfs-linux-fallback.img > nanoarch-chroot /mnt > pacman -S linux
