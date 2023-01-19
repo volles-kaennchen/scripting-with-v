@@ -13,6 +13,8 @@
     chmod +x install.sh
     ./install.sh
     reboot
+    
+## Login as user: root | for pw press ENTER
 
 ## Install Arch Linux by cloning an Git Repository
 
