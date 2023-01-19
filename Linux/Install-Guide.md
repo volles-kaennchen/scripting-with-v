@@ -3,6 +3,7 @@
     loadkeys de-latin
     nano /etc/pacman.conf 
 --> change Siglevel to = Never
+
     pacman -Syy
     pacman -S git tmux 
     git clone https...
