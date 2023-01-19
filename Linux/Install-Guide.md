@@ -1,8 +1,9 @@
 ## Boot Arch Linux and run Bash
 
     loadkeys de-latin1
-
-
+    
+    
+    
     nano /etc/pacman.conf 
 --> change Siglevel to = Never
 
