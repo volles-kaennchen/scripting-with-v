@@ -23,6 +23,8 @@
 
 ## Install Arch Linux via an specific Git Repository Skript
 
+    pacman -S wget 
+
     wget https://raw.githubusercontent.com/namedesuser/namedesrepository/namedesbranch/namederdatei  
     z.B.: https://raw.githubusercontent.com/volles-kaennchen/scripting-with-v/master/Linux/install.sh
 
