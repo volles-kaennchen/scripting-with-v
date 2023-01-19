@@ -1,4 +1,0 @@
-cd $HOME/Dokumente/git
-git clone https://github.com/JoergEF/Gitlab-Runner-mit-Docker.git
-cd Gitlab-Runner-mit-Docker
-make
