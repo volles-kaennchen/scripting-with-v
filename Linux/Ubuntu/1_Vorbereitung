@@ -3,6 +3,6 @@ vagrant plugin install vagrant-vbguest
 sudo adduser $USER vboxusers
 [ -d /etc/vbox ] || sudo mkdir -p /etc/vbox
 echo "* 192.xxx.x.0/24" | sudo tee -a /etc/vbox/networks.conf
-echo "192.xxx.x.11 gitlab.kurs.iad gitlab" | sudo tee -a /etc/hosts
+echo "192.xxx.x.11 gitlab.kurs.test gitlab" | sudo tee -a /etc/hosts
 mkdir -p $HOME/Dokumente/git
 cd $HOME/Dokumente/git
