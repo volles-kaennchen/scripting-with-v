@@ -2,6 +2,7 @@
 
     loadkeys de-latin1
 
+
     nano /etc/pacman.conf 
 --> change Siglevel to = Never
 
@@ -11,13 +12,11 @@
     git clone https...
 
     cd Archlinux
-
     git checkout master
 
     ls -lh
 
     chmod +x install.sh
-
     ./install.sh
 
 ## Install Arch Linux by cloning an Git Repository
