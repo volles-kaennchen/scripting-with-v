@@ -30,15 +30,25 @@
   Add-Computer -DomainName 'DOMAINEEINFÜGEN' -Restart
 
   cd HKLM:\SOFTWARE\Microsoft\WebManagement\Server\
+  
   dir
+  
   gci -r
+  
   Set-Service -Name WMSVC -StartupType Automatic
+  
   Start-Service WMSVC
+  
   ls
+  
   Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WebManagement\Server" -Name EnableRemoteManagement -value 1 -type Dword
+  
   ls
 
   dir *.msc
+  
   cd CERT:
+  
   dir
+  
   certmgr.msc
