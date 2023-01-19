@@ -34,6 +34,6 @@
 * ip route add default - behebt mögliche Internet Probleme
 * sleep - z.B.: sleep 3, für 3 Sekunden warten
 * mkinitcpio - startet den Kernel neu
-* systemctl - systemmd - kernel
+* von systemctl - nach systemmd - zum kernel
 
 
